@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <main>
+        <div id="comments-panel" class="hidden">
+            <input type="text" id="new-comment" placeholder="Add a comment...">
+            <button id="submit-comment">Submit</button>
+            <button id="clear-comments">Clear All</button>
+            <div id="comments-list">
+                <!-- Comments will be dynamically inserted here -->
+            </div>
+        </div>
+        <div id="info-panel">
+            <!-- Add content for the info panel here -->
+            <h2>Project Football</h2>
+            <p>Welcome to the English Football Stadium Digital Database.</p>
+            <p>Feel free to click on any icon to see stadium details</p>
+        </div>
+        <div class="left-side">
+            <input type="text" id="stadium-name-filter" placeholder="Search by team name...">
+            <div id="division-filter">
+                <div>
+                    <input type="checkbox" id="premier-league" value="Premier League">
+                    <label for="premier-league">Premier League</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="championship" value="Championship">
+                    <label for="championship">Championship</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="league-one" value="League One">
+                    <label for="league-one">League One</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="league-two" value="League Two">
+                    <label for="league-two">League Two</label>
+                </div>
+            </div>
+            <div class="scrollable-list">
+                <ul id="team-list">
+                    <!-- Team list items -->
+                </ul>
+            </div>
+        </div>
+        <div id="map" class="map"></div>
+    </main>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
