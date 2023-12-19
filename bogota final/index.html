@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bogota Parks</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin=""/>
+
+    <!-- The project's main CSS module -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <h1>Bogotá's Hidden Green Gems: Park and Recreation Area Explorer's Guide</h1>
+      <div id="park-map">
+        <div class="map-overlay">
+          <div class="container">
+            <label for="comment" name="comment">ADD YOUR COMMENTS</label>
+            <textarea id="comment"></textarea>
+            <button id="addComments">Add</button>
+            <div id="allComments"></div>
+            </div>
+        </div>
+      </div>
+    <div id="park-filters">
+      <label><input type="checkbox" name="filter-type" value="ZV">Ecology</label>
+      <label><input type="checkbox" name="filter-type" value="L">Leisure</label>
+      <label><input type="checkbox" name="filter-type" value="D">Sports</label>
+      <label><input type="checkbox" name="filter-type" value="C">Culture</label>
+      <label><input type="checkbox" name="filter-type" value="SIN">General</label>
+      <label><input type="checkbox" name="filter-type" value="Co">Commercial</label>
+      <div class="address-input">
+        <input type="text" name="address-search" id="address-search" placeholder="Enter address to filter parks and recreation areas...">
+        <ul class="address-options" id="address-options"></ul>
+      </div>
+    </div>
+    <input type="text" name="park-filter-name" id="park-filter-name" placeholder="Filter parks and recreation areas by name">
+    <ul class="park-list" id="park-list">
+      <li>
+        <div class="park-name">xxx</div>
+        <div class="park-type">ABC</div>
+      </li>
+    </ul>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+
+    <!-- Turf, for lightweight geospatial processing -->
+    <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
+
+    <!-- Lodash for useful functions -->
+    <script src="https://unpkg.com/lodash@4.17.21/lodash.min.js"></script>
+
+    <!-- The project's main JavaScript module -->
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
