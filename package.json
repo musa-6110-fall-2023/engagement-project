@@ -1,51 +1,22 @@
 {
-  "name": "engagement-project",
+  "name": "writeable-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "directories": {},
   "scripts": {
-    "css-lint": "stylelint --color  \"**/*.css\"",
-    "js-lint": "eslint --color **/*.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^9.2.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase": "^10.7.1",
+    "knex": "^3.1.0"
+  },
   "devDependencies": {
-    "eslint": "^8.48.0",
-    "eslint-config-google": "^0.14.0",
-    "stylelint": "^15.10.3",
-    "stylelint-config-standard": "^34.0.0"
-  },
-  "eslintConfig": {
-    "extends": [
-      "eslint:recommended",
-      "google"
-    ],
-    "parserOptions": {
-      "ecmaVersion": "latest",
-      "sourceType": "module"
-    },
-    "env": {
-      "browser": true,
-      "es6": true
-    },
-    "globals": {
-      "L": "readonly"
-    },
-    "rules": {
-      "indent": ["error", 2, { "VariableDeclarator": 1 }],
-      "max-len": "off",
-      "object-curly-spacing": "off",
-      "operator-linebreak": ["error", "after", { "overrides": { "?": "ignore", ":": "ignore" } }],
-      "require-jsdoc": "off"
-    }
-  },
-  "stylelint": {
-    "extends": "stylelint-config-standard",
-    "rules": {
-      "declaration-empty-line-before": null,
-      "declaration-block-no-redundant-longhand-properties": null,
-      "no-duplicate-selectors": null
-    }
+    "docco": "^0.9.1",
+    "nodemon": "^2.0.15"
   }
 }

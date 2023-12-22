@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.map {
+  height: 100vh;
+  background-color: aliceblue;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+
+/* the following is contents about how to adapt the app into mobile screen by overwriting all the styles above seperately */
+@media screen and (width <= 425px) {
+  main {
+    flex-direction: column-reverse;
+  }
+
+  .map {
+    height: 50vh;
+  }
+
+  #station-name-filter {
+    padding: 0.5rem;
+    width: 100%;
+  }
+}
