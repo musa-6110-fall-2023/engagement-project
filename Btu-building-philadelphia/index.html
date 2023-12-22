@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Energy Consumption of Buildings in Philadelphia</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+        
+        <link rel="stylesheet" href="css/style.css">
+
+
+    </head>
+
+    <body>
+        <header> 
+            <h1>Building Energy Usages in Philadelphia (2021) </h1>
+        </header>
+
+        <main>
+            <div calss="left-side">
+
+                <section class="address-section">
+                    <input type="text" name="address-entry" id="address-entry" placeholder="Enter your building address here..." size="55">
+                    <ol id="address-choices" class="address-choices"></ol>
+                </section>
+
+                <section id="building-filters">
+                    <label><input type="checkbox" name="building-filter-type" value="Multifamily Housing,Residence Hall/Dormitory"> Residential</label>
+                    <label><input type="checkbox" name="building-filter-type" value="Supermarket/Grocery Store,Enclosed Mall,Restaurant,Other - Mall"> Commercial</label>
+                    <label><input type="checkbox" name="building-filter-type" value="K-12 School,College/University"> Educational</label>
+                    <label><input type="checkbox" name="building-filter-type" value="Hospital (General Medical & Surgical),"> Hospital</label>
+                    <label><input type="checkbox" name="building-filter-type" value="Office,Medical Office"> Office</label>
+                    <label><input type="checkbox" name="building-filter-type" value="Museum,Performing Arts,Hotel,Convention Center"> Cultural</label>
+                    <label><input type="checkbox" name="building-filter-type" value="Other,Parking"> Other</label>
+                    
+
+
+                </section>
+
+                <section class="building-list-section">
+                    <ol class="building-list">
+                        <li>
+                            <div class="building-name"> Meyerson Hall, University of Pennsylvania</div>
+                            <div class="building-address"> Walnut & 33rd</div>
+                            <div class="building-EUI">
+                                <div class="building-EUI-high"> 50000 KBTU</div>
+                                <div class="building-EUI-med"> 30000 KBTU</div>
+                                <div class="building-EUI-low"> 10000 KBTU</div>
+                            </div>
+                            <div class="building-type"> Educational </div>
+
+                        </li>
+                    </ol>
+                </section>
+                
+            </div>
+           
+            <div class="right-side">
+                <section id="map"></section>
+
+                <section class="legend">
+                    <img src="images/map-legend.jpg" alt="map-legend" width="50%">
+                </section>
+                
+            </div>
+        </main>
+
+
+         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+         crossorigin=""></script>
+
+         <script type="module" src="js/main.js"></script>
+
+    </body>
+</html>
