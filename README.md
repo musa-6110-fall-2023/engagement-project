@@ -41,6 +41,7 @@ Examples in real life:
 - Redistricting input _à la_ [District Builder](https://www.districtbuilder.org/)
 - City budget reallocation
 - Transportation planning _à la_ [Remix](https://www.remix.com/)
+- Street Art dataset curation _à la_ [Street Art Cities](https://streetartcities.com/)
 
 Examples from past classes:
 ​
