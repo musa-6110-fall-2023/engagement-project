@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.map {
+  height: 100vh;
+  background-color: aliceblue;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.checkbox-group div {
+  margin: 1%;
+}
+
+.checkbox-group label {
+  margin-left: 1%;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 20%;
+}
+
+#stadium-name-filter {
+  margin: 5%;
+  padding: 2%;
+}
+
+.scrollable-list {
+  margin:5%;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+#team-list {
+  margin: 5%;
+  padding: 0;
+  list-style: none;
+}
+
+#team-list li {
+  padding: 5px 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+#comments-panel {
+  position: fixed;
+  top: 33%;
+  right: 1vh;
+  width: 300px;
+  bottom: 3vh; /* Adjust this value as needed to make room for the info panel */
+  background-color: rgba(255, 255, 255, 0.753);
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+#info-panel {
+  position: fixed;
+  top: 1vh;
+  right: 1vh;
+  width: 300px;
+  bottom: 68%;
+  background-color: rgba(255, 255, 255, 0.753);
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.hidden {
+  display: none;
+}
+
+#new-comment {
+  width: 95%; /* Set the width to 100% to match the container's width */
+  max-width: 100%; /* Set the maximum width to match the container's width */
+  padding: 5px;
+  margin-bottom: 10px;
+}
+#submit-comment {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+#submit-comment:hover {
+  background-color: #0056b3;
+}
+
+#clear-comments, .delete-comment {
+  padding: 5px 10px;
+  margin-top: 5px;
+  background-color: rgb(167, 167, 167);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#clear-comments:hover, .delete-comment:hover {
+  background-color: darkred;
+}
+
+.comment-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.comment-text {
+  flex-grow: 1;
+}
+
+#comments-list {
+  flex-grow: 1;
+  overflow-y: auto;
+  max-height: 80%;
+}
