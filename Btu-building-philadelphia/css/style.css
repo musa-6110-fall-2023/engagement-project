@@ -1,0 +1,130 @@
+html {
+    font-family: sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+#map {
+    height: 580px;
+    width: 100%;
+}
+
+.right-side{
+    height: 580px;
+    width: 100%;
+
+}
+
+.left-side {
+    border: 1px solid rgba(0, 0, 255, 0);
+}
+
+.address-section {
+    border: 1px solid rgba(0, 128, 0, 0);
+    width: 400px;
+    
+}
+
+.type-section {
+    border: 1px solid rgba(232, 13, 13, 0);
+    margin-bottom: 1rem;
+}
+
+#building-filters {
+    column-count: 3;
+    margin-right: 1rem;   
+}
+
+label {
+    display: block;
+}
+
+[name="school-filter-name"] {
+    display: block;
+    column-span: all;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.building-list-section {
+    border: 1px solid rgba(255, 166, 0, 0);
+    margin-top: 0.5rem;
+    height: 473px;
+    overflow-y: auto;
+}
+
+.building-list {
+    padding: 0;
+    list-style: none;
+
+}
+
+.building-name {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.building-address {
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+
+}
+
+.building-EUI,
+.building-type {
+    font-size: 0.8rem;
+    display: inline;
+    border: 1px solid gray;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    background-color: #eee;
+}
+
+.building-EUI-high {
+    font-size: 0.8rem;
+    color: azure;
+    display: inline;
+    border: 1px solid gray;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    background-color: #ff0000;
+}
+
+.building-EUI-med {
+    font-size: 0.8rem;
+    display: inline;
+    border: 1px solid gray;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    background-color: #fff200;
+}
+
+.building-EUI-low {
+    font-size: 0.8rem;
+    color: azure;
+    display: inline;
+    border: 1px solid gray;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    background-color: #1500ff;
+}
+
+.building-list li {
+    margin: 1rem 0.5rem;
+
+}
+
+.address-choices li:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.legend {
+    position: absolute;
+    margin-top: 1rem;
+}
